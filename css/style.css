@@ -113,6 +113,7 @@ img {
   padding-bottom: 32px;
   justify-content: center;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link {
@@ -144,6 +145,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-item {
@@ -197,6 +199,7 @@ img {
 .header-icon {
   margin-right: 10px;
   fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-icon:hover,
@@ -248,6 +251,7 @@ img {
   letter-spacing: 0.06em;
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -364,13 +368,16 @@ img {
   display: flex;
 }
 
+.about-list > .about-item {
+  background-color: var(--primary-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .team-text-part {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: var(--primary-bg-color);
-  border-right: 1px solid var(--project-color);
-  border-bottom: 1px solid var(--project-color);
-  border-left: 1px solid var(--project-color);
 }
 
 .about-other-title {
@@ -408,6 +415,8 @@ img {
   align-items: center;
   justify-content: center;
   color: var(--primary-icon-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-icon {
@@ -418,6 +427,7 @@ img {
 .team-social-link:focus {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
+
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -427,6 +437,8 @@ img {
 .clients-company-item {
   width: 170px;
   height: 92px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-main .title {
@@ -454,6 +466,8 @@ img {
   color: var(--primary-icon-color);
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-company-item .clients-company-logo {
@@ -498,6 +512,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--primary-bg-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-item {
@@ -516,6 +531,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-adress:hover,
 .footer-adress:focus,
@@ -549,6 +565,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-title {
@@ -601,8 +618,9 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-items + .portfolio-items {
@@ -614,6 +632,8 @@ img {
 .current-btn {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -626,6 +646,8 @@ img {
 
 .portfolio-shadow {
   display: block;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-shadow:focus,
@@ -642,6 +664,7 @@ img {
 
 .about-next:hover .next-cover-text {
   transform: translateY(0);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .next-cover-wrap {
@@ -705,6 +728,7 @@ img {
   border-right: 1px solid var(--project-color);
   border-bottom: 1px solid var(--project-color);
   border-left: 1px solid var(--project-color);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -------------------BACKDROP--------------- */
